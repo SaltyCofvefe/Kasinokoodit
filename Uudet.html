@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kasinokoodit</title>
+    <link rel="stylesheet" href="Themes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap&ver=5.8.2">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.collapsible-button').click(function () {
+            var collapsibleContent = $(this).siblings('.collapsible-content');
+            collapsibleContent.toggleClass('expanded');
+            $(this).toggleClass('hidden');
+        });
+
+        $('.close-button').click(function () {
+            var collapsibleContent = $(this).closest('.collapsible-content');
+            collapsibleContent.removeClass('expanded');
+            var collapsibleButton = collapsibleContent.siblings('.collapsible-button');
+            collapsibleButton.removeClass('hidden');
+        });
+    });
+</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-219872935-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-219872935-1');
+    </script>
+    
+    <link rel="icon" href="https://i.imgur.com/IiyGMfe.jpeg" sizes="500x500">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/IiyGMfe.jpeg">
+    <meta name="msapplication-TileImage" content="https://res.cloudinary.com/podium-north/images/w_270,h_270,c_scale/f_auto,q_auto/v1636714664/ladingpages/cropped-fav/cropped-fav-270x270.png?_i=AA">
+    
+    
+<style>
+    .collapsible-button.hidden {
+        display: none;
+    }
+
+    .close-button {
+        background-color: #3CB043;
+        display: block;
+        margin-top: 10px; /* Adjust spacing as needed */
+        background-color: #ccc;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .collapsible {
+    max-height: 270px; /* Initial collapsed height */
+    overflow: hidden;
+    position: relative;
+}
+
+.collapsible-content {
+    margin-right: 100px;
+        display: none;
+            padding: 0px;
+            background-color: #f8f8f8;
+            position: relative;
+            z-index: 200;
+            width: 100%; /* Adjust as needed */
+    }
+
+    /* Style for expanded collapsible content */
+    .collapsible-content.expanded {
+        display: block;
+    }
+    .guide + .guide {
+        margin-top: 40px; /* Adjust as needed */
+    }
+
+.collapsible-button {
+    background-color: #3CB043;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+}
+
+.collapsible-button.active {
+    display: none;
+}
+
+.collapsible-button.active + .collapsible-content {
+    display: block;
+}
+
+.collapsible.active {
+    max-height: none; /* Expand when active */
+}
+    
+#bonus-misuse-section {
+    background-color: #fff;
+    padding: 40px 0;
+    border-top: 1px solid #000; /* Add the solid black line */
+}
+    html {
+            background-color: #f8f8f8;
+        }
+   #cookie-popup {
+  position: fixed;
+  left: 20px; /* Adjust as needed */
+  bottom: 20px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px; /* Adding smooth corners */
+  box-shadow: 0px 6px 10px rgba(0, 128, 0, 0.3); /* Adjusted box shadow */
+  display: none;
+}
+
+#cookie-popup h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+#cookie-accept, #cookie-reject {
+  background-color: #008000; /* Green background color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#cookie-accept:hover, #cookie-reject:hover {
+  background-color: #006400; /* Darker green for hover effect */
+}
+
+.cookie-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cookie-popup-buttons a {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-popup-buttons a:hover {
+    background-color: #0056b3;
+}
+    
+    .casinoo-section {
+
+  
+  margin-top: -100px; /* Adjust the margin-top value as needed */
+    margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+}
+    .odd {
+  background-color: #fff; /* White background for odd rows */
+}
+
+.even {
+  background-color: #f2f2f2; /* Grey background for even rows */
+}
+    
+         body {
+  margin: 0;
+  padding: 0;
+  background-image: url('');
+  background-size: auto;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #000;
+}
+    
+    h1, h2 {
+      color: #4CAF50;
+        
+    }
+    
+    .section-container {
+      margin: 20px auto;
+      max-width: 800px;
+        padding-bottom: 40px;
+    }
+    
+    .casino-section {
+       background-color: #F8F8F8;
+      padding: 0; /* Adjusted padding */
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      overflow: hidden; /* Hide overflow to round top corners */
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: none;
+      padding: 30px;
+      text-align: center;
+    }
+    
+    .casino-image {
+      width: 100px;
+    }
+    
+    .play-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .play-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Additional style for the integrated header */
+    tr.header-row th {
+      background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+      color: white;
+      text-shadow: 1px 1px 2px #5E3494;
+      padding: 20px 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    
+    /* Additional style for the gradient header */
+    .gradient-header {
+      background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+      text-align: center;
+      padding: 20px 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    #hp_heading_text {
+      color: white;
+      text-shadow: 1px 1px 2px #5E3494;
+    }
+    
+     header .header-content {
+        background-color: #00aaff; /* Blue background color */
+        height: 100px;
+
+    }
+       header {
+            position: relative; /* or absolute, depending on your layout */
+            background-color: #fff; /* Blue background color */
+            color: #ffffff; /* White text color */
+            text-align: center; /* Center align the text */
+            padding: 20px; /* Add some padding for better spacing */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 50px;
+           border-bottom: 1px solid black;
+         border-top: 1px solid black;
+         border-right: 1px solid black;
+         border-left: 1px solid black;
+        }
+
+        .footer-column img {
+    max-width: 80%; /* Adjust as needed */
+}
+        img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+.header-text {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.header-text h1 {
+            font-size: 22px; /* Adjust the value to the desired font size */
+            font-family: 'Your Desired Font', sans-serif; /* Replace 'Your Desired Font' with the actual font name */
+    color: #000;
+        cursor: pointer;
+        margin: 0;
+        }
+       .header-text .child-elements {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+   .header-text .arrow-icon {
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        width: 0;
+        height: -100px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #000;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
+    }
+
+    .header-text .arrow-icon.active {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+
+    .header-text:hover .child-elements {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .child-elements {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .child-elements p {
+        margin: 5px 0;
+    }
+.header-logo {
+
+    align-items: center;
+    
+}
+         ..header-logo img {
+    max-height: 10vh; /* 10% of viewport height */
+}
+.header-text h1 {
+    margin: 0;
+}
+
+..header-content img {
+    max-height: 40vh; /* Adjust as needed */
+    max-width: 80%; /* 80% of viewport width */
+}
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeInImage 2s ease-in-out forwards;
+}
+        
+        .custom-cursor {
+    cursor: url('custom-cursor.png'), auto;
+}
+        
+        input[type="text"]:focus, button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+        
+        .section {
+    background-image: linear-gradient(45deg, #f06, #9f6);
+    animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+        
+        img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+        
+        a[href^="#"] {
+            transition: scroll-behavior 1s ease;
+        }
+  
+        .header-content-image img {
+    max-height: 300px;
+    max-width: 300px;
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeInImage 2s ease-in-out forwards;
+      
+  }
+         @keyframes fadeInImage {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply hover effect to buttons */
+        .offer-btn {
+            background: linear-gradient(180deg, #72d35d 0%, #2cd405 100%);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        .offer-btn:hover {
+            background-color: #72d35d;
+        }
+
+        /* Apply hover effect to offer cards */
+        .offer {
+    background-color: #ffffff;
+    box-shadow: 2px 15px 30px rgba(46, 213, 115, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 90%; /* Adjust as needed */
+            
+}
+
+        .offer:hover {
+            transform: scale(1.02);
+        }
+
+        /* Apply hover effect to footer links */
+        footer a {
+            color: #F8F8F8;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #72d35d;
+        }
+    
+        .footer-wrapper, footer {
+    background-color: #000000;
+    color: #F8F8F8;
+    padding: 0px 0;
+}
+    .centered-h2 {
+        text-align: center;
+    }
+</style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookiePopup = document.getElementById("cookie-popup");
+            const acceptButton = document.getElementById("cookie-accept");
+            const rejectButton = document.getElementById("cookie-reject");
+
+            function hidePopup() {
+                cookiePopup.style.display = "none";
+            }
+
+            function setCookie(key, value, days) {
+                const date = new Date();
+                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+                const expires = "expires=" + date.toUTCString();
+                document.cookie = key + "=" + value + ";" + expires + ";path=/";
+            }
+
+            acceptButton.addEventListener("click", function () {
+                setCookie("cookies_accepted", "true", 365);
+                hidePopup();
+            });
+
+            rejectButton.addEventListener("click", function () {
+                setCookie("cookies_accepted", "false", 365);
+                hidePopup();
+            });
+
+            function shouldShowPopup() {
+                return document.cookie.indexOf("cookies_accepted=true") === -1;
+            }
+
+            if (shouldShowPopup()) {
+                cookiePopup.style.display = "block";
+            }
+        });
+    </script>
+
+</head>
+    
+
+    
+    
+    
+ <body class="home page-template-default page page-id-299">
+    <div id="wrapper">
+        <div id="container" style="padding-bottom: 60px;">
+            <main id="primary" class="site-main">
+                <div id="post-299" class="post-299 page type-page status-publish hentry">
+                    <header id="header" class="no-logo header-with-line">
+                        <div class="header-logo">
+                            <img src="https://i.imgur.com/8IzH3Xy.png" alt="Kasinobonukset" height="200" width="200">
+                        </div>
+                        <a href="index.html" class="header-text">
+                            <h1>Koti</h1>
+                        </a>
+                        <a href="otherpage.html" class="header-text">
+                            <h1>Uudet</h1>
+                        </a>
+                        <a class="header-text">
+                            <h1>Bonukset</h1>
+                            <div class="arrow-icon"></div>
+                            <div class="child-elements">
+                                <p>Parhaat</p>
+                                <p>Non sticky</p>
+                            </div>
+                        </a>
+                        
+                  
+          
+
+</header>
+                    
+<section id="purpose-legal-basis-section" style="background-color: #F9F9F9; padding: 20px 0; padding-bottom: 40px;">
+    <div class="container" style="text-align: center;">
+        <h2 class="section-title" style="color: #3CB043; font-size: 24px; margin-bottom: 20px;">
+            Uudet bonuskoodit!
+        </h2>
+        <div style="max-width: 400px; margin: 0 auto;">
+            <p class="section-text" style="font-size: 16px; line-height: 1.4; color: #333; padding-bottom: 8px;">
+                Nappaa uusi kasinobonuskoodi vuodelta 2023 ja aloita pelaaminen ja voittaminen! Muista tarkistaa seuraavat asiat:
+                Ennen kuin hyväksyt kasinon tarjoaman bonuskoodin, lue aina bonuksen ehdot, vaatimukset ja kierrätysvaatimukset.
+            </p>
+        </div>
+    </div>
+</section>
+   
+<div class="section-container">
+  <section class="casino-section" >
+    <table>
+      <tr class="header-row">
+        <th colspan="3">Parhaiten arvioidut sivut <span class="country-name">&nbsp;</span>! <span class="flag-icon">&nbsp;</span></th>
+      </tr>
+      <tr class="odd">
+        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
+        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+      <tr class="even">
+        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
+        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+     </tr>
+      <tr class="odd">
+        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
+        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+        <tr class="even">
+        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
+        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+      <tr class="odd">
+        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
+        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+        <tr class="even">
+        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
+        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+    </tr>
+      <tr class="odd">
+        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
+        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+        <tr class="even">
+        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
+        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+        <tr class="odd">
+        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
+        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+        <tr class="even">
+        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
+        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+        <tr class="odd">
+        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
+        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+        <tr class="even">
+        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
+        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+        <tr class="odd">
+        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
+        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
+        <td><button class="play-button">Pelaa nyt</button></td>
+      </tr>
+      
+    </table>
+  </section>
+  
+                    
+
+
+
+
+    
+        
+            
+<div id="cookie-popup" class="cookie-popup">
+        <div id="cookie-popup-content">
+            Tämä sivu käyttää evästeitä.
+            <a href="/privacy-policy">Lue tietosuoja- ja evästepolitiikkamme.</a>
+        </div>
+        <div class="cookie-popup-buttons">
+            <a id="cookie-accept">Accept</a>
+            <a id="cookie-reject">Reject</a>
+        </div>
+    </div>
+
+
+
+ </main><!-- #main -->
+           </div>
+            
+           <footer id="footer" style="background: #000000;color:#F8F8F8;">
+    <div class="footer-wrapper" style="background-color: #000000;">
+        <div class="container" style="background-color: #ffffff;">
+            <div class="footer-top" style="background-color: #000000;">
+                <span class="footer-top-title">Olemme joukko intohimoisia nettikasinoiden ja kolikkopelien pelaajia</span>
+                <span class="footer-top-text">haluaisimme jakaa tietomme ja oivalluksemme muiden kanssa, jotka etsivät vinkkejä ja neuvoja isoille voitoille ja mahtavalle viihteelle. MakeatPyöritykset-tiimin tavoitteena on tarjota luotettavaa tietoa parhaista nettikasinoiden sivustoista, esitellä uusia nettikasinoita, joissa kannattaa pelata, sekä jakaa ilmaiskierroksia, talletusvapaita etuja ja muita kolikkopelien bonuksia auttaakseen pelaajia kasvattamaan voittojaan. Koska olemme kolikkopelien harrastajia, keskitymme tarjoamaan sinulle perusteellisia yksityiskohtia nettikolikkopelikoneista. Jatka seurassamme ja jatka pyöräyttelyäsi!</span>
+                <a href="tietosuoja.html">Lue tietosuoja- ja evästepolitiikkamme.</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__seo-icons-container" style="text-align: center;">
+
+        <a href="https://www.peluuri.fi/" target="_blank" rel="noopener nofollow">
+            <img width="120" height="45" src="Peluuri-footer-120x45.png" class="footer__icon footer__icon--seo lazyload" alt="Peluuri - Pelaa vastuullisesti" decoding="async" loading="lazy">
+        </a>
+
+
+    </div>
+     
+</footer>
+        </div>
+        <script type='text/javascript' id='pct-frontend-script-js-extra'>
+/* <![CDATA[ */
+var pct = {"ua_code":"UA-219872935-1"};
+/* ]]> */
+</script>
+        <script type="text/javascript" defer src="https://js.sentry-cdn.com/595c73a6ddb1490e9dd4a3a882390e0b.min.js" id="sentrylazy-js" crossorigin="anonymous"></script>
+
+        <script>
+    const collapsibleButtons = document.querySelectorAll('.collapsible-button');
+
+    collapsibleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('active');
+            const content = button.nextElementSibling;
+            content.classList.toggle('active');
+        });
+    });
+</script>
+</body>
+</html>
