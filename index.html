@@ -15,20 +15,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap&ver=5.8.2">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $('.collapsible-button').click(function () {
-            var collapsibleContent = $(this).siblings('.collapsible-content');
-            collapsibleContent.toggleClass('expanded');
-            $(this).toggleClass('hidden');
-        });
+$(document).ready(function () {
+    $('.collapsible-button').click(function () {
+        var collapsibleContent = $(this).siblings('.collapsible-content');
 
-        $('.close-button').click(function () {
-            var collapsibleContent = $(this).closest('.collapsible-content');
-            collapsibleContent.removeClass('expanded');
-            var collapsibleButton = collapsibleContent.siblings('.collapsible-button');
-            collapsibleButton.removeClass('hidden');
-        });
+        if (collapsibleContent.hasClass('expanded')) {
+            $(this).text('Lue Lisää'); // Change text to "Lue Lisää"
+        } else {
+            $(this).text('Sulje'); // Change text to "Sulje"
+        }
+
+        collapsibleContent.toggleClass('expanded');
     });
+});
 </script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTBHWB674C"></script>
@@ -88,9 +87,6 @@
   }
         
 }
-    .collapsible-button.hidden {
-        display: none;
-    }
 
     .close-button {
         background-color: #3CB043;
@@ -102,7 +98,7 @@
         cursor: pointer;
     }
     .collapsible {
-    max-height: 270px; /* Initial collapsed height */
+    max-height: 4000px; /* Initial collapsed height */
     overflow: hidden;
     position: relative;
 }
@@ -133,11 +129,10 @@
     cursor: pointer;
     display: block;
     margin-top: 10px;
+    margin 0
 }
 
-.collapsible-button.active {
-    display: none;
-}
+
 
 .collapsible-button.active + .collapsible-content {
     display: block;
