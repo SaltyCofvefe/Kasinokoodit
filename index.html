@@ -64,7 +64,471 @@
     <meta name="msapplication-TileImage" content="https://res.cloudinary.com/podium-north/images/w_270,h_270,c_scale/f_auto,q_auto/v1636714664/ladingpages/cropped-fav/cropped-fav-270x270.png?_i=AA">
 
     
+<style>
+    @media (max-width: 768px) {
+  /* Apply styles for screens up to 768px wide */
+  .casino-section table {
+    width: 100%;
+    font-size: 14px; /* Adjust font size for readability */
+  }
 
+  .casino-section th, .casino-section td {
+    padding: 5px; /* Add padding for touch-friendly spacing */
+  }
+
+  /* Hide table headers on small screens to save space */
+  .casino-section th {
+    display: absolute;
+  }
+
+  /* Center align table cells on small screens */
+  .casino-section td {
+    text-align: center;
+  }
+        .section-title {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .section-text {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    line-height: 1.4; /* Adjust line height for improved readability */
+      
+  }
+     .how-to-guides .guide h3,
+  .how-to-guides .guide .collapsible-content li {
+    text-align: center;
+  }
+
+  /* Center align the "Lue Lisää" button in all articles within the .how-to-guides section */
+  .how-to-guides .guide .collapsible-button {
+    display: block;
+    margin: 0 auto;
+  }
+        
+}
+    
+caption {
+  background: linear-gradient(to bottom, #4CAF50, #2E8B57); /* Replace with your desired color code */
+    color: white;
+      text-shadow: 1px 1px 2px #5E3494;
+      padding: 15px 0;
+    font-weight: bold;
+}
+    .close-button {
+        background-color: #3CB043;
+        display: block;
+        margin-top: 10px; /* Adjust spacing as needed */
+        background-color: #ccc;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .collapsible {
+    max-height: 4000px; /* Initial collapsed height */
+    overflow: hidden;
+    position: relative;
+}
+
+.collapsible-content {
+    margin-right: 100px;
+        display: none;
+            padding: 0px;
+            background-color: #f8f8f8;
+            position: relative;
+            z-index: 200;
+            width: 100%; /* Adjust as needed */
+    }
+
+    /* Style for expanded collapsible content */
+    .collapsible-content.expanded {
+        display: block;
+    }
+    .guide + .guide {
+        margin-top: 40px; /* Adjust as needed */
+    }
+
+.collapsible-button {
+    background-color: #3CB043;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+
+
+.collapsible-button.active + .collapsible-content {
+    display: block;
+}
+
+.collapsible.active {
+    max-height: none; /* Expand when active */
+}
+    
+#bonus-misuse-section {
+    background-color: #fff;
+    padding: 40px 0;
+    border-top: 1px solid #000; /* Add the solid black line */
+    text-align: center;
+}
+    html {
+            background-color: #f8f8f8;
+        }
+   #cookie-popup {
+  position: fixed;
+  left: 20px; /* Adjust as needed */
+  bottom: 20px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px; /* Adding smooth corners */
+  box-shadow: 0px 6px 10px rgba(0, 128, 0, 0.3); /* Adjusted box shadow */
+  display: none;
+       z-index: 9999;
+}
+
+#cookie-popup h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+#cookie-accept, #cookie-reject {
+  background-color: #008000; /* Green background color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#cookie-accept:hover, #cookie-reject:hover {
+  background-color: #006400; /* Darker green for hover effect */
+}
+
+.cookie-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cookie-popup-buttons a {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-popup-buttons a:hover {
+    background-color: #0056b3;
+}
+    
+    .casinoo-section {
+
+  
+  margin-top: -100px; /* Adjust the margin-top value as needed */
+    margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+}
+    .odd {
+  background-color: #fff; /* White background for odd rows */
+}
+
+.even {
+  background-color: #f2f2f2; /* Grey background for even rows */
+}
+    
+         body {
+  margin: 0;
+  padding: 0;
+  background-image: url('');
+  background-size: auto;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #000;
+}
+    
+    h1, h2 {
+      color: #4CAF50;
+        
+    }
+    
+    .section-container {
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    
+    .casino-section {
+       background-color: #F8F8F8;
+      padding: 0; /* Adjusted padding */
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      overflow: hidden; /* Hide overflow to round top corners */
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: none;
+      padding: 30px;
+      text-align: center;
+    }
+    
+    .casino-image {
+      width: 100px;
+    }
+    
+    .play-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .play-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Additional style for the integrated header */
+    tr.header-row th {
+      background: #2E8B57;
+      color: white;
+      text-shadow: 1px 1px 2px #5E3494;
+      padding: 10px 0;
+     
+    }
+    
+    /* Additional style for the gradient header */
+    .gradient-header {
+      background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+      text-align: center;
+      padding: 20px 0;
+      
+    }
+
+    #hp_heading_text {
+      color: white;
+      text-shadow: 1px 1px 2px #5E3494;
+    }
+    
+     header .header-content {
+        background-color: #00aaff; /* Blue background color */
+        height: 100px;
+
+    }
+       header {
+            position: relative; /* or absolute, depending on your layout */
+            background-color: #fff; /* Blue background color */
+            color: #ffffff; /* White text color */
+            text-align: center; /* Center align the text */
+            padding: 20px; /* Add some padding for better spacing */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 50px;
+           border-bottom: 1px solid black;
+         border-top: 1px solid black;
+         border-right: 1px solid black;
+         border-left: 1px solid black;
+        }
+
+        .footer-column img {
+    max-width: 80%; /* Adjust as needed */
+}
+        img {
+    width: auto;
+
+}
+
+
+
+
+.header-text {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.header-text h1 {
+            font-size: 22px; /* Adjust the value to the desired font size */
+            font-family: 'Your Desired Font', sans-serif; /* Replace 'Your Desired Font' with the actual font name */
+    color: #000;
+        cursor: pointer;
+        margin: 0;
+        }
+       .header-text .child-elements {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+   .header-text .arrow-icon {
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        width: 0;
+        height: -100px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #000;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
+    }
+
+    .header-text .arrow-icon.active {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+
+    .header-text:hover .child-elements {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .child-elements {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .child-elements p {
+        margin: 5px 0;
+    }
+.header-logo {
+
+    align-items: center;
+    
+}
+         ..header-logo img {
+    max-height: 10vh; /* 10% of viewport height */
+}
+.header-text h1 {
+    margin: 0;
+}
+
+..header-content img {
+    max-height: 40vh; /* Adjust as needed */
+    max-width: 80%; /* 80% of viewport width */
+}
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeInImage 2s ease-in-out forwards;
+}
+        
+        .custom-cursor {
+    cursor: url('custom-cursor.png'), auto;
+}
+        
+        input[type="text"]:focus, button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+        
+        .section {
+    background-image: linear-gradient(45deg, #f06, #9f6);
+    animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+        
+        img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+        
+        a[href^="#"] {
+            transition: scroll-behavior 1s ease;
+        }
+  
+        .header-content-image img {
+    max-height: 300px;
+    max-width: 300px;
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeInImage 2s ease-in-out forwards;
+      
+  }
+         @keyframes fadeInImage {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply hover effect to buttons */
+        .offer-btn {
+            background: linear-gradient(180deg, #72d35d 0%, #2cd405 100%);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        .offer-btn:hover {
+            background-color: #72d35d;
+        }
+
+        /* Apply hover effect to offer cards */
+        .offer {
+    background-color: #ffffff;
+    box-shadow: 2px 15px 30px rgba(46, 213, 115, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 90%; /* Adjust as needed */
+            
+}
+
+        .offer:hover {
+            transform: scale(1.02);
+        }
+
+        /* Apply hover effect to footer links */
+        footer a {
+            color: #F8F8F8;
+            transition: color 0.3s ease;
+            
+        }
+
+footer {
+    background: #615e5e;
+    padding-top: 20px;
+    margin-top: -160px;
+}
+
+</style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const cookiePopup = document.getElementById("cookie-popup");
