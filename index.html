@@ -97,7 +97,7 @@
 }
     
 caption {
-  background: #4CAF50; /* Replace with your desired color code */
+  background: linear-gradient(to bottom, #4CAF50, #2E8B57); /* Replace with your desired color code */
     color: white;
       text-shadow: 1px 1px 2px #5E3494;
       padding: 15px 0;
@@ -293,7 +293,7 @@ caption {
 
     /* Additional style for the integrated header */
     tr.header-row th {
-      background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+      background: #2E8B57;
       color: white;
       text-shadow: 1px 1px 2px #5E3494;
       padding: 10px 0;
@@ -659,12 +659,15 @@ footer {
 <div class="section-container">
   <section class="casino-section">
     <table>
-       <caption>Parhaiten arvioidut kasinot <span class="country-name">&nbsp;</span>! <span class="flag-icon">&nbsp;</span></caption>
-      <tr class="header-row">
-        <th>Kasino</th>
-        <th>Tarjous</th>
-        <th></th>
-      </tr>
+      <caption>Parhaiten arvioidut kasinot <span class="country-name">&nbsp;</span>! <span class="flag-icon">&nbsp;</span></caption>
+      <thead>
+        <tr class="header-row">
+          <th>Kasino</th>
+          <th>Tarjous</th>
+          <th></th>
+        </tr>
+          </thead>
+      <tbody>
       <tr class="odd">
         <td><img class="casino-image" src="Caxino-Casino-Logo.webp" alt="Caxino-casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
         <td>Caxino Casino - 100% BONUS JOPA €200 ASTI + 100 ILMAISKIERROSTA</td>
@@ -731,7 +734,7 @@ footer {
         <td><a href="https://go.kamikazeaffiliates.com/visit/?bta=35131&nci=5385&utm_campaign=FI"><button class="play-button">Pelaa nyt</button></a></td>
       </tr>
 
-      
+       </tbody>
     </table>
   </section>
                     
