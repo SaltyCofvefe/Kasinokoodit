@@ -22,433 +22,475 @@
     <meta name="msapplication-TileImage" content="https://res.cloudinary.com/podium-north/images/w_270,h_270,c_scale/f_auto,q_auto/v1636714664/ladingpages/cropped-fav/cropped-fav-270x270.png?_i=AA">
     
     
-<style>
-    .collapsible-button.hidden {
-        display: none;
-    }
-
-    .close-button {
-        background-color: #3CB043;
+    <style>
+        @media (max-width: 768px) {
+      /* Apply styles for screens up to 768px wide */
+      .casino-section table {
+        width: 100%;
+        font-size: 14px; /* Adjust font size for readability */
+        margin-bottom: 20px
+      }
+    
+      .casino-section th, .casino-section td {
+        padding: 5px; /* Add padding for touch-friendly spacing */
+      }
+    
+      /* Hide table headers on small screens to save space */
+      .casino-section th {
+        display: absolute;
+      }
+    
+      /* Center align table cells on small screens */
+      .casino-section td {
+        text-align: center;
+      }
+            .section-title {
+        font-size: 20px; /* Adjust font size for smaller screens */
+      }
+    
+      .section-text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        line-height: 1.4; /* Adjust line height for improved readability */
+          
+      }
+         .how-to-guides .guide h3,
+      .how-to-guides .guide .collapsible-content li {
+        text-align: center;
+      }
+    
+      /* Center align the "Lue Lisää" button in all articles within the .how-to-guides section */
+      .how-to-guides .guide .collapsible-button {
         display: block;
-        margin-top: 10px; /* Adjust spacing as needed */
-        background-color: #ccc;
-        padding: 5px 10px;
-        border: none;
-        cursor: pointer;
+        margin: 0 auto;
+      }
+            
     }
-    .collapsible {
-    max-height: 270px; /* Initial collapsed height */
-    overflow: hidden;
-    position: relative;
-}
-
-.collapsible-content {
-    margin-right: 100px;
-        display: none;
-            padding: 0px;
-            background-color: #f8f8f8;
-            position: relative;
-            z-index: 200;
-            width: 100%; /* Adjust as needed */
-    }
-
-    /* Style for expanded collapsible content */
-    .collapsible-content.expanded {
-        display: block;
-    }
-    .guide + .guide {
-        margin-top: 40px; /* Adjust as needed */
-    }
-
-.collapsible-button {
-    background-color: #3CB043;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    display: block;
-    margin-top: 10px;
-}
-
-.collapsible-button.active {
-    display: none;
-}
-
-.collapsible-button.active + .collapsible-content {
-    display: block;
-}
-
-.collapsible.active {
-    max-height: none; /* Expand when active */
-}
-    
-#bonus-misuse-section {
-    background-color: #fff;
-    padding: 40px 0;
-    border-top: 1px solid #000; /* Add the solid black line */
-}
-    html {
-            background-color: #f8f8f8;
-        }
-   #cookie-popup {
-  position: fixed;
-  left: 20px; /* Adjust as needed */
-  bottom: 20px; /* Adjust as needed */
-  width: 300px; /* Adjust as needed */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px; /* Adding smooth corners */
-  box-shadow: 0px 6px 10px rgba(0, 128, 0, 0.3); /* Adjusted box shadow */
-  display: none;
-}
-
-#cookie-popup h2 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-#cookie-accept, #cookie-reject {
-  background-color: #008000; /* Green background color */
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-#cookie-accept:hover, #cookie-reject:hover {
-  background-color: #006400; /* Darker green for hover effect */
-}
-
-.cookie-popup-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.cookie-popup-buttons a {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cookie-popup-buttons a:hover {
-    background-color: #0056b3;
-}
-    
-    .casinoo-section {
-
-  
-  margin-top: -100px; /* Adjust the margin-top value as needed */
-    margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
-}
-    .odd {
-  background-color: #fff; /* White background for odd rows */
-}
-
-.even {
-  background-color: #f2f2f2; /* Grey background for even rows */
-}
-    
-         body {
-  margin: 0;
-  padding: 0;
-  background-image: url('');
-  background-size: auto;
-  background-repeat: no-repeat;
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  color: #000;
-}
-    
-    h1, h2 {
-      color: #4CAF50;
         
+    caption {
+      background: linear-gradient(to bottom, #4CAF50, #2E8B57); /* Replace with your desired color code */
+        color: white;
+          text-shadow: 1px 1px 2px #5E3494;
+          padding: 15px 0;
+        font-weight: bold;
+    }
+        .close-button {
+            background-color: #3CB043;
+            display: block;
+            margin-top: 10px; /* Adjust spacing as needed */
+            background-color: #ccc;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .collapsible {
+        max-height: 4000px; /* Initial collapsed height */
+        overflow: hidden;
+        position: relative;
     }
     
-    .section-container {
-      margin: 20px auto;
-      max-width: 800px;
-        padding-bottom: 40px;
+    .collapsible-content {
+        margin-right: 100px;
+            display: none;
+                padding: 0px;
+                background-color: #f8f8f8;
+                position: relative;
+                z-index: 200;
+                width: 100%; /* Adjust as needed */
+        }
+    
+        /* Style for expanded collapsible content */
+        .collapsible-content.expanded {
+            display: block;
+        }
+        .guide + .guide {
+            margin-top: 40px; /* Adjust as needed */
+        }
+    
+    .collapsible-button {
+        background-color: #3CB043;
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        display: block;
+        margin-top: 10px;
+        margin: 0 auto;
     }
     
-    .casino-section {
-       background-color: #F8F8F8;
-      padding: 0; /* Adjusted padding */
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-      overflow: hidden; /* Hide overflow to round top corners */
+    
+    
+    .collapsible-button.active + .collapsible-content {
+        display: block;
     }
     
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    .collapsible.active {
+        max-height: none; /* Expand when active */
+    }
+        
+    #bonus-misuse-section {
+        background-color: #fff;
+        padding: 40px 0;
+        border-top: 1px solid #000; /* Add the solid black line */
+        text-align: center;
+    }
+        html {
+                background-color: #f8f8f8;
+            }
+       #cookie-popup {
+      position: fixed;
+      left: 20px; /* Adjust as needed */
+      bottom: 20px; /* Adjust as needed */
+      width: 300px; /* Adjust as needed */
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px; /* Adding smooth corners */
+      box-shadow: 0px 6px 10px rgba(0, 128, 0, 0.3); /* Adjusted box shadow */
+      display: none;
+           z-index: 9999;
     }
     
-    th, td {
-      border: none;
-      padding: 30px;
-      text-align: center;
+    #cookie-popup h2 {
+      margin-top: 0;
+      font-size: 18px;
     }
     
-    .casino-image {
-      width: 100px;
-    }
-    
-    .play-button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 6px 12px;
+    #cookie-accept, #cookie-reject {
+      background-color: #008000; /* Green background color */
+      color: #fff;
+      padding: 10px 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      margin-top: 10px;
     }
     
-    .play-button:hover {
-      background-color: #45a049;
-    }
-
-    /* Additional style for the integrated header */
-    tr.header-row th {
-      background: linear-gradient(to bottom, #4CAF50, #2E8B57);
-      color: white;
-      text-shadow: 1px 1px 2px #5E3494;
-      padding: 20px 0;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+    #cookie-accept:hover, #cookie-reject:hover {
+      background-color: #006400; /* Darker green for hover effect */
     }
     
-    /* Additional style for the gradient header */
-    .gradient-header {
-      background: linear-gradient(to bottom, #4CAF50, #2E8B57);
-      text-align: center;
-      padding: 20px 0;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-    }
-
-    #hp_heading_text {
-      color: white;
-      text-shadow: 1px 1px 2px #5E3494;
+    .cookie-popup-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
     }
     
-     header .header-content {
-        background-color: #00aaff; /* Blue background color */
-        height: 100px;
-
-    }
-       header {
-            position: relative; /* or absolute, depending on your layout */
-            background-color: #fff; /* Blue background color */
-            color: #ffffff; /* White text color */
-            text-align: center; /* Center align the text */
-            padding: 20px; /* Add some padding for better spacing */
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           height: 50px;
-           border-bottom: 1px solid black;
-         border-top: 1px solid black;
-         border-right: 1px solid black;
-         border-left: 1px solid black;
-        }
-
-        .footer-column img {
-    max-width: 80%; /* Adjust as needed */
-}
-        img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-
-.header-text {
-    position: relative;
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-    margin: 0 10px;
-}
-.header-text h1 {
-            font-size: 22px; /* Adjust the value to the desired font size */
-            font-family: 'Your Desired Font', sans-serif; /* Replace 'Your Desired Font' with the actual font name */
-    color: #000;
+    .cookie-popup-buttons a {
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border-radius: 5px;
         cursor: pointer;
-        margin: 0;
-        }
-       .header-text .child-elements {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 10px;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
     }
-
-   .header-text .arrow-icon {
-        position: absolute;
-        top: 50%;
-        right: -15px;
-        width: 0;
-        height: -100px;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid #000;
-        transform: translateY(-50%);
+    
+    .cookie-popup-buttons a:hover {
+        background-color: #0056b3;
+    }
+        
+        .casinoo-section {
+    
+      
+      margin-top: -100px; /* Adjust the margin-top value as needed */
+        margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+    }
+        .odd {
+      background-color: #fff; /* White background for odd rows */
+    }
+    
+    .even {
+      background-color: #f2f2f2; /* Grey background for even rows */
+    }
+        
+             body {
+      margin: 0;
+      padding: 0;
+      background-image: url('');
+      background-size: auto;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #000;
+    }
+        
+        h1, h2 {
+          color: #4CAF50;
+            
+        }
+        
+        .section-container {
+          margin: 20px auto;
+          max-width: 800px;
+        }
+        
+        .casino-section {
+           background-color: #F8F8F8;
+          padding: 0; /* Adjusted padding */
+          border-radius: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+          overflow: hidden; /* Hide overflow to round top corners */
+          margin-bottom: 140px
+        }
+        
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        
+        th, td {
+          border: none;
+          padding: 30px;
+          text-align: center;
+        }
+        
+        .casino-image {
+          width: 100px;
+        }
+        
+        .play-button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 6px 12px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        
+        .play-button:hover {
+          background-color: #45a049;
+        }
+    
+        /* Additional style for the integrated header */
+        tr.header-row th {
+          background: #2E8B57;
+          color: white;
+          text-shadow: 1px 1px 2px #5E3494;
+          padding: 10px 0;
+         
+        }
+        
+        /* Additional style for the gradient header */
+        .gradient-header {
+          background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+          text-align: center;
+          padding: 20px 0;
+          
+        }
+    
+        #hp_heading_text {
+          color: white;
+          text-shadow: 1px 1px 2px #5E3494;
+        }
+        
+         header .header-content {
+            background-color: #00aaff; /* Blue background color */
+            height: 100px;
+    
+        }
+           header {
+                position: relative; /* or absolute, depending on your layout */
+                background-color: #fff; /* Blue background color */
+                color: #ffffff; /* White text color */
+                text-align: center; /* Center align the text */
+                padding: 20px; /* Add some padding for better spacing */
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 50px;
+               border-bottom: 1px solid black;
+             border-top: 1px solid black;
+             border-right: 1px solid black;
+             border-left: 1px solid black;
+            }
+    
+            .footer-column img {
+        max-width: 80%; /* Adjust as needed */
+    }
+          .header-logo  img {
+                max-width: 100%;
+                height: auto;
+    }
+    
+    img {
+    width: auto;
+}
+    
+    
+    .header-text {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+    .header-text h1 {
+                font-size: 22px; /* Adjust the value to the desired font size */
+                font-family: 'Your Desired Font', sans-serif; /* Replace 'Your Desired Font' with the actual font name */
+        color: #000;
+            cursor: pointer;
+            margin: 0;
+            }
+           .header-text .child-elements {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+    
+       .header-text .arrow-icon {
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            width: 0;
+            height: -100px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #000;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+    
+        .header-text .arrow-icon.active {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    
+    
+        .header-text:hover .child-elements {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .child-elements {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+    
+        .child-elements p {
+            margin: 5px 0;
+        }
+    .header-logo {
+    
+        align-items: center;
+        
+    }
+             ..header-logo img {
+        max-height: 10vh; /* 10% of viewport height */
+    }
+    .header-text h1 {
+        margin: 0;
+    }
+    
+    ..header-content img {
+        max-height: 40vh; /* Adjust as needed */
+        max-width: 80%; /* 80% of viewport width */
+    }
+        opacity: 0; /* Set initial opacity to 0 */
+        animation: fadeInImage 2s ease-in-out forwards;
+    }
+            
+            .custom-cursor {
+        cursor: url('custom-cursor.png'), auto;
+    }
+            
+            input[type="text"]:focus, button:hover {
+        transform: scale(1.1);
         transition: transform 0.3s ease;
     }
-
-    .header-text .arrow-icon.active {
-        transform: translateY(-50%) rotate(180deg);
+            
+            .section {
+        background-image: linear-gradient(45deg, #f06, #9f6);
+        animation: backgroundAnimation 10s linear infinite;
     }
-
-
-    .header-text:hover .child-elements {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .child-elements {
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    .child-elements p {
-        margin: 5px 0;
-    }
-.header-logo {
-
-    align-items: center;
     
-}
-         ..header-logo img {
-    max-height: 10vh; /* 10% of viewport height */
-}
-.header-text h1 {
-    margin: 0;
-}
-
-..header-content img {
-    max-height: 40vh; /* Adjust as needed */
-    max-width: 80%; /* 80% of viewport width */
-}
-    opacity: 0; /* Set initial opacity to 0 */
-    animation: fadeInImage 2s ease-in-out forwards;
-}
-        
-        .custom-cursor {
-    cursor: url('custom-cursor.png'), auto;
-}
-        
-        input[type="text"]:focus, button:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-        
-        .section {
-    background-image: linear-gradient(45deg, #f06, #9f6);
-    animation: backgroundAnimation 10s linear infinite;
-}
-
-@keyframes backgroundAnimation {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
-}
-        
-        img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-        
-        a[href^="#"] {
-            transition: scroll-behavior 1s ease;
+    @keyframes backgroundAnimation {
+        0% {
+            background-position: 0 0;
         }
-  
-        .header-content-image img {
-    max-height: 300px;
-    max-width: 300px;
-    opacity: 0; /* Set initial opacity to 0 */
-    animation: fadeInImage 2s ease-in-out forwards;
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+            
+            img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+            
+            a[href^="#"] {
+                transition: scroll-behavior 1s ease;
+            }
       
-  }
-         @keyframes fadeInImage {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
+            .header-content-image img {
+        max-height: 300px;
+        max-width: 300px;
+        opacity: 0; /* Set initial opacity to 0 */
+        animation: fadeInImage 2s ease-in-out forwards;
+          
+      }
+             @keyframes fadeInImage {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Apply hover effect to buttons */
-        .offer-btn {
-            background: linear-gradient(180deg, #72d35d 0%, #2cd405 100%);
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            
-        }
-
-        .offer-btn:hover {
-            background-color: #72d35d;
-        }
-
-        /* Apply hover effect to offer cards */
-        .offer {
-    background-color: #ffffff;
-    box-shadow: 2px 15px 30px rgba(46, 213, 115, 0.5);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    max-width: 90%; /* Adjust as needed */
-            
-}
-
-        .offer:hover {
-            transform: scale(1.02);
-        }
-
-        /* Apply hover effect to footer links */
-        footer a {
-            color: #F8F8F8;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #72d35d;
-        }
     
-        .footer-wrapper, footer {
-    background-color: #000000;
-    color: #F8F8F8;
-    padding: 0px 0;
-}
-    .centered-h2 {
-        text-align: center;
+            /* Apply hover effect to buttons */
+            .offer-btn {
+                background: linear-gradient(180deg, #72d35d 0%, #2cd405 100%);
+                color: #ffffff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                
+            }
+    
+            .offer-btn:hover {
+                background-color: #72d35d;
+            }
+    
+            /* Apply hover effect to offer cards */
+            .offer {
+        background-color: #ffffff;
+        box-shadow: 2px 15px 30px rgba(46, 213, 115, 0.5);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        max-width: 90%; /* Adjust as needed */
+                
     }
-</style>
+    
+            .offer:hover {
+                transform: scale(1.02);
+            }
+    
+            /* Apply hover effect to footer links */
+            footer a {
+                color: #F8F8F8;
+                transition: color 0.3s ease;
+                
+            }
+    
+    footer {
+        background: #615e5e;
+        padding-top: 20px;
+        margin-top: -160px;
+    }
+    
+    </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const cookiePopup = document.getElementById("cookie-popup");
@@ -499,7 +541,7 @@
                 <div id="post-299" class="post-299 page type-page status-publish hentry">
                     <header id="header" class="no-logo header-with-line">
                         <div class="header-logo">
-                            <img src="https://i.imgur.com/8IzH3Xy.png" alt="Kasinobonukset" height="200" width="200">
+                            <img src="kasinokooditlogo.webp" alt="Kasinobonukset">
                         </div>
                         <a href="index.html" class="header-text">
                             <h1>Koti</h1>
@@ -536,79 +578,86 @@
 </section>
    
 <div class="section-container">
-  <section class="casino-section" >
-    <table>
-      <tr class="header-row">
-        <th colspan="3">Parhaiten arvioidut sivut <span class="country-name">&nbsp;</span>! <span class="flag-icon">&nbsp;</span></th>
-      </tr>
-      <tr class="odd">
-        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
-        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-      <tr class="even">
-        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
-        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-     </tr>
-      <tr class="odd">
-        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
-        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
+    <section class="casino-section">
+      <table>
+        <caption>Uusimmat! <span class="country-name">&nbsp;</span>! <span class="flag-icon">&nbsp;</span></caption>
+        <thead>
+          <tr class="header-row">
+            <th id="kasino-header" scope="col">Kasino</th>
+            <th id="tarjous-header" scope="col">Tarjous</th>
+            <th id="pelaa-header" scope="col">Pelaa!</th>
+          </tr>
+            </thead>
+        <tbody>
+        <tr class="odd">
+          <td headers="kasino-header"><img class="casino-image" src="Caxino-Casino-Logo.webp" alt="Caxino-casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Caxino Casino - 100% BONUS JOPA €200 ASTI + 100 ILMAISKIERROSTA</td>
+          <td headers="pelaa-header"><a href="https://go.rootzaffiliates.com/visit/?bta=101638&nci=5381&utm_campaign=FI"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
         <tr class="even">
-        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
-        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-      <tr class="odd">
-        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
-        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-        <tr class="even">
-        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
-        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-    </tr>
-      <tr class="odd">
-        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
-        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-        <tr class="even">
-        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
-        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
+          <td headers="kasino-header"><img class="casino-image" src="buumi-casino-logo.webp" alt="Buumi logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Buumi Casino – 15% cashback päivittäin + paljon muuta!</td>
+          <td headers="pelaa-header"><a href="https://record.njordaffiliates.com/_Cb9Ybl5sGzoOMRDMpvVHzmNd7ZgqdRLk/5030/"><button class="play-button">Pelaa nyt</button></a></td>
+       </tr>
+        <tr class="odd">
+          <td headers="kasino-header"><img class="casino-image" src="img-SL01-lucky-spins-logo-500x250-1.webp" alt="lucky spins casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Lucky Spins - Get 100% bonus up to €200 cash</td>
+          <td headers="pelaa-header"><a href="https://media.rhinoaffiliates.com/redirect.aspx?pid=6501&bid=1884&lpid=142"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+          <tr class="even">
+          <td headers="kasino-header"><img class="casino-image" src="galaksino-logo.webp" alt="galaksino casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Galaksino - Pay'nPlay - Talleta 20 € ja saat 5 € bonusrahaa sekä 200 ilmaiskierrosta.</td>
+          <td headers="pelaa-header"><a href="https://media.galaksino.com/tracking.php?tracking_code&aid=115563&mid=3331&sid=418689&pid=1069"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+        <tr class="odd">
+          <td headers="kasino-header"><img class="casino-image" src="rabona.webp" alt="Rabona casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Rabona Casino - 100 % aina 500 € asti + 200 kierrosta</td>
+          <td headers="pelaa-header"><a href="https://media.rabona.com/redirect.aspx?pid=1546279&bid=6638"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+          <tr class="even">
+          <td headers="kasino-header"><img class="casino-image" src="Spin-Fever-Colour.webp" alt="spingfever casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header"> Spin Fever Casino - 100 % jopa 2000 asti € + 200 ilmaiskierrosta</td>
+          <td headers="pelaa-header"><a href="https://deeplogic.media/aad65c757"><button class="play-button">Pelaa nyt</button></a></td>
       </tr>
         <tr class="odd">
-        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
-        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-        <tr class="even">
-        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
-        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-        <tr class="odd">
-        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
-        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-        <tr class="even">
-        <td><img class="casino-image" src="casino2.jpg" alt="Kasino 2"></td>
-        <td>Tule Kasino 2:een ja koe unohtumattomia hetkiä!</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-        <tr class="odd">
-        <td><img class="casino-image" src="casino1.jpg" alt="Kasino 1"></td>
-        <td>Kasino 1 on täynnä jännittäviä pelejä ja voittomahdollisuuksia.</td>
-        <td><button class="play-button">Pelaa nyt</button></td>
-      </tr>
-      
-    </table>
-  </section>
+          <td headers="kasino-header"><img class="casino-image" src="spinzcasino.webp" alt="spinz casino logo" loading="lazy" style="width: 115px; height: 45px;" ></td>
+          <td headers="tarjous-header">Spinz - Saat 100 % bonusta jopa 300€ asti sekä 100 ilmaiskierrosta.</td>
+          <td headers="pelaa-header"><a href="https://go.rootzaffiliates.com/visit/?bta=901337&nci=5816&utm_campaign=FI"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+          <tr class="even">
+          <td headers="kasino-header"><img class="casino-image" src="ultracasino-logo.webp" alt="ultra casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Ultra Casino - up to 1000€ in bonuses + 100FS</td>
+          <td headers="pelaa-header"><a href="https://afftrackuc.21.partners/C.ashx?btag=a_8823b_645c_&affid=2143&siteid=8823&adid=645&c="><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+          <tr class="odd">
+          <td headers="kasino-header"><img class="casino-image" src="Norppa-Casino-logo-.webp" alt="Norppa casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header"> Norppa Kasino - 100 % bonus aina 200 € asti + 200 ilmaiskierrosta.</td>
+          <td headers="pelaa-header"><a href="https://go.doubledoubleup.com/visit/?bta=35755&brand=norppakasino&utm_campaign=FI"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+          <tr class="even">
+          <td headers="kasino-header"><img class="casino-image" src="logo1.webp" alt="videoslots casino logo" loading="lazy" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Videoslots Casino - 11 ilmaiskierrosta + 100 % bonus aina 200 € asti.</td>
+          <td headers="pelaa-header"><a href="http://affiliates.videoslots.com/click/?aid=videoslots-match096&turl=https%3A%2F%2Fwww.videoslots.com%2Ffi%2F%3Fsignup%3Dtrue%26referral_id%3Dmatch096_FI&bid=no-banner&label=match096_FI"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+          <tr class="odd">
+          <td headers="kasino-header"><img class="casino-image" src="5fabf3dd370a2wheelz-logo.webp" loading="lazy" alt="Wheelz casino logo" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Wheelz Casino - 100 % bonus aina 300 € asti + 100 ilmaiskierrosta.</td>
+          <td><a href="https://go.rootzaffiliates.com/visit/?bta=102668&nci=5631&utm_campaign=FI"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+          <tr class="even">
+          <td headers="kasino-header"><img class="casino-image" src="Rapid-Casino-Logo.webp" loading="lazy" alt="Rapid casino logo" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Rapid Casino - Saat 100 % bonusta jopa 1000 € sekä 300 ilmaiskierrosta.</td>
+          <td headers="pelaa-header"><a href="https://afftrackrc.21.partners/C.ashx?btag=a_12945b_793c_&affid=2923&siteid=12945&adid=793&c="><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+          <tr class="odd">
+          <td headers="kasino-header"><img class="casino-image" src="yugibet.webp" loading="lazy" alt="Yugibet casino logo" style="width: 115px; height: 45px;"></td>
+          <td headers="tarjous-header">Yugibet - 100% bonus aina €200 asti</td>
+          <td headers="pelaa-header"><a href="https://go.kamikazeaffiliates.com/visit/?bta=35131&nci=5385&utm_campaign=FI"><button class="play-button">Pelaa nyt</button></a></td>
+        </tr>
+  
+         </tbody>
+      </table>
+    </section>
   
                     
 
